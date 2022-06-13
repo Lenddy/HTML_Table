@@ -1,0 +1,17 @@
+*{
+    margin: 0 auto;
+}
+
+table{
+    width: 400px;
+    height:10px ;
+}
+
+table tr td{
+    margin: 10px;
+
+}
+
+.color{
+    background-color: gray;
+}

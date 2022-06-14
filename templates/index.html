@@ -8,22 +8,17 @@
     <link rel="stylesheet" type="text/css"  href=" {{ url_for( 'static', filename='style.css') }} "
 </head>
 <body>
-    <table class="color">
-        <tr>
-            <td>First name</td>
-            <td>Lirst name</td>
-            <td>Full name</td>
+    <table >
+        <tr class="color">
+            <th>First name</th>
+            <th>List name</th>
+            <th>Full name</th>
         </tr>
-    </table>
-
-    <table>
-
         {% for element in users %}
-        <tr >
-            <td >
-                {{element["first_name"]}}____________ {{element["last_name"]}}____________{{element["first_name"]}} {{element["last_name"]}}
-
-            </td>
+        <tr>
+            <td>{{element["last_name"]}}</td>
+            <td>{{element["first_name"]}} </td>
+            <td> {{element["first_name"]}}          {{element["last_name"]}}</td>
         </tr>
         {% endfor %}
     </table>

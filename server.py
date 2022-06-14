@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 
+app = Flask(__name__)
+
 users = [
     {'first_name': 'Michael', 'last_name': 'Choi'},
     {'first_name': 'John', 'last_name': 'Supsupin'},
@@ -7,7 +9,7 @@ users = [
     {'first_name': 'KB', 'last_name': 'Tonel'}
 ]
 
-app = Flask(__name__)
+
 
 
 @app.route("/table")

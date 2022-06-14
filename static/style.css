@@ -11,14 +11,6 @@ table,th,td,tr{
     border: solid 1px black;
 }
 
-
-
-
-table tr td{
-    margin: 10px;
-
-}
-
 .color{
     background-color: gray;
 }
